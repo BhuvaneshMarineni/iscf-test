@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "title": "Fall Welcome Banquet 2023",
+    "description": "Over 500 students and families came together for our annual welcome celebration",
+    "category": "Welcome Events",
+    "date": "2023-09-15",
+    "photographer": "Sarah Johnson",
+    "tags": [
+      "welcome",
+      "banquet",
+      "students",
+      "families"
+    ],
+    "featured": true,
+    "images": [
+      {
+        "id": 1,
+        "url": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Welcome Banquet - Students and families gathering",
+        "caption": "Students and families enjoying dinner together"
+      },
+      {
+        "id": 2,
+        "url": "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Cultural presentations at welcome banquet",
+        "caption": "Cultural presentations and performances"
+      },
+      {
+        "id": 3,
+        "url": "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "International food at banquet",
+        "caption": "Delicious international cuisine"
+      },
+      {
+        "id": 4,
+        "url": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Group photo at welcome banquet",
+        "caption": "Group photo with all attendees"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "International Food Festival",
+    "description": "Celebrating the diverse cultures in our community with traditional foods",
+    "category": "Cultural Events",
+    "date": "2024-02-05",
+    "photographer": "Maria Rodriguez",
+    "tags": [
+      "culture",
+      "food",
+      "diversity",
+      "celebration"
+    ],
+    "featured": true,
+    "images": [
+      {
+        "id": 7,
+        "url": "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Cultural Celebration",
+        "caption": "Traditional foods from around the world"
+      },
+      {
+        "id": 8,
+        "url": "https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Students sharing culture",
+        "caption": "Students sharing their cultural heritage"
+      },
+      {
+        "id": 9,
+        "url": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Cultural performances",
+        "caption": "Traditional music and dance performances"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Campus Fellowship Meetings",
+    "description": "Regular meetings right on campus for fellowship and support",
+    "category": "Campus Life",
+    "date": "2024-01-20",
+    "photographer": "David Kim",
+    "tags": [
+      "campus",
+      "fellowship",
+      "support",
+      "community"
+    ],
+    "featured": false,
+    "images": [
+      {
+        "id": 10,
+        "url": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Campus Meeting",
+        "caption": "Weekly campus fellowship meeting"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Student Leadership Workshop",
+    "description": "Training the next generation of international student leaders",
+    "category": "Leadership",
+    "date": "2024-01-15",
+    "photographer": "Lisa Wang",
+    "tags": [
+      "leadership",
+      "training",
+      "development",
+      "students"
+    ],
+    "featured": false,
+    "images": [
+      {
+        "id": 11,
+        "url": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Leadership Training",
+        "caption": "Leadership development workshop"
+      },
+      {
+        "id": 12,
+        "url": "https://images.pexels.com/photos/1181605/pexels-photo-1181605.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "thumbnail": "https://images.pexels.com/photos/1181605/pexels-photo-1181605.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "alt": "Group activities",
+        "caption": "Team building and leadership exercises"
+      }
+    ]
+  },
+  {
+    "title": "test",
+    "description": "test",
+    "category": "Welcome Events",
+    "date": "2025-09-19",
+    "photographer": "test",
+    "tags": "",
+    "images": [
+      {
+        "id": 1,
+        "url": "blob:http://localhost:3000/296033f2-3dd4-404f-84b5-eedd6c3c12ca",
+        "thumbnail": "blob:http://localhost:3000/b3152d35-b849-4822-96c0-a4769c7075e0",
+        "alt": "test - Image 1",
+        "caption": "Photo from test"
+      }
+    ],
+    "id": 6
+  }
+]

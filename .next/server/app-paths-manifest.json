@@ -1,0 +1,17 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/api/testimonials/route": "app/api/testimonials/route.js",
+  "/api/programs/route": "app/api/programs/route.js",
+  "/about/page": "app/about/page.js",
+  "/events/page": "app/events/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/api/gallery/route": "app/api/gallery/route.js",
+  "/get-involved/page": "app/get-involved/page.js",
+  "/api/events/route": "app/api/events/route.js",
+  "/contact/page": "app/contact/page.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/admin/gallery/upload/page": "app/admin/gallery/upload/page.js"
+}
