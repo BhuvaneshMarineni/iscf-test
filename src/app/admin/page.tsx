@@ -6,16 +6,38 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAuthStore } from '@/store/authStore';
 
+// Type definitions
+interface Event {
+  id: number;
+  title: string;
+  date: string;
+  status: string;
+  attendees: number;
+}
+
+interface Photo {
+  id: number;
+  title: string;
+  category: string;
+  date: string;
+  count: number;
+}
+
+interface Program {
+  id: number;
+  title: string;
+  schedule: string;
+  status: string;
+  participants: number;
+}
+
 export default function AdminDashboard() {
   const router = useRouter();
   const { isLoggedIn, user, logout } = useAuthStore();
   const [activeTab, setActiveTab] = useState('overview');
-  const [events, setEvents] = useState([
-  ]);
-  const [photos, setPhotos] = useState([
-  ]);
-  const [programs, setPrograms] = useState([
-  ]);
+  const [events, setEvents] = useState<Event[]>([]);
+  const [photos, setPhotos] = useState<Photo[]>([]);
+  const [programs, setPrograms] = useState<Program[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Redirect if not logged in
