@@ -5,31 +5,7 @@ import { Shield, Users, Calendar, Camera, Settings, LogOut, Eye, Edit, Trash2, P
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAuthStore } from '@/store/authStore';
-
-// Type definitions
-interface Event {
-  id: number;
-  title: string;
-  date: string;
-  status: string;
-  attendees: number;
-}
-
-interface Photo {
-  id: number;
-  title: string;
-  category: string;
-  date: string;
-  count: number;
-}
-
-interface Program {
-  id: number;
-  title: string;
-  schedule: string;
-  status: string;
-  participants: number;
-}
+import type { Event, Photo, Program } from '@/types';
 
 export default function AdminDashboard() {
   const router = useRouter();
