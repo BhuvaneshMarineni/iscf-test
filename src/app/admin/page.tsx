@@ -114,7 +114,7 @@ export default function AdminDashboard() {
           method: 'DELETE',
         });
         if (response.ok) {
-          setEvents(events.filter(e => e.id !== id));
+          setEvents((events as Event[]).filter(e => e.id !== id));
           // Trigger data refresh on events page
           localStorage.setItem('admin-data-updated', Date.now().toString());
           window.dispatchEvent(new CustomEvent('admin-data-updated'));
@@ -132,7 +132,7 @@ export default function AdminDashboard() {
           method: 'DELETE',
         });
         if (response.ok) {
-          setPhotos(photos.filter(p => p.id !== id));
+          setPhotos((photos as Photo[]).filter(p => p.id !== id));
           // Trigger data refresh on events page
           localStorage.setItem('admin-data-updated', Date.now().toString());
           window.dispatchEvent(new CustomEvent('admin-data-updated'));
@@ -150,7 +150,7 @@ export default function AdminDashboard() {
           method: 'DELETE',
         });
         if (response.ok) {
-          setPrograms(programs.filter(p => p.id !== id));
+          setPrograms((programs as Program[]).filter(p => p.id !== id));
           // Trigger data refresh on events page
           localStorage.setItem('admin-data-updated', Date.now().toString());
           window.dispatchEvent(new CustomEvent('admin-data-updated'));
@@ -162,7 +162,7 @@ export default function AdminDashboard() {
   };
 
   const toggleProgramStatus = async (id: number) => {
-    const program = programs.find(p => p.id === id);
+    const program = (programs as Program[]).find(p => p.id === id);
     if (!program) return;
     
     const newStatus = program.status === 'active' ? 'paused' : 'active';
@@ -177,7 +177,7 @@ export default function AdminDashboard() {
       });
       
       if (response.ok) {
-        setPrograms(programs.map(p => 
+        setPrograms((programs as Program[]).map(p => 
           p.id === id ? { ...p, status: newStatus } : p
         ));
         // Trigger data refresh on events page
