@@ -97,12 +97,15 @@ export default function AdminDashboard() {
     }
   }, [isLoggedIn, fetchData]);
 
-  const stats = [
+  // Calculate stats with proper typing
+  const getStats = () => [
     { label: 'Total Events', value: events.length.toString(), icon: Calendar, color: 'blue' },
     { label: 'Gallery Albums', value: photos.length.toString(), icon: Camera, color: 'green' },
-    { label: 'Active Programs', value: programs.filter(p => p.status === 'active').length.toString(), icon: Users, color: 'purple' },
-    { label: 'Total Participants', value: programs.reduce((sum, p) => sum + p.participants, 0).toString(), icon: BarChart3, color: 'orange' },
+    { label: 'Active Programs', value: (programs as Program[]).filter(p => p.status === 'active').length.toString(), icon: Users, color: 'purple' },
+    { label: 'Total Participants', value: (programs as Program[]).reduce((sum, p) => sum + p.participants, 0).toString(), icon: BarChart3, color: 'orange' },
   ];
+
+  const stats = getStats();
 
   const deleteEvent = async (id: number) => {
     if (confirm('Are you sure you want to delete this event?')) {
