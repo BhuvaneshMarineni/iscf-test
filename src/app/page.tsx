@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Calendar, Heart, Users, Globe, ArrowRight, MapPin, Clock, Home as HomeIcon, Star, Quote, GraduationCap, Award, CheckCircle } from 'lucide-react';
+import { Calendar, Heart, Users, Globe, ArrowRight, MapPin, Clock, Home as HomeIcon, Star, Quote, GraduationCap, Award, CheckCircle, DollarSign } from 'lucide-react';
 import { getFeaturedTestimonials, getActivePrograms } from '@/lib/api';
 import type { Testimonial, Program } from '@/lib/api';
 
@@ -457,6 +457,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Support Our Mission Section */}
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+        <div className="container mx-auto px-6 md:px-12 lg:px-16">
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="flex items-center justify-center mb-6">
+              <Heart className="w-16 h-16 text-white mr-4" />
+              <DollarSign className="w-12 h-12 text-white" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Support Our Mission
+            </h2>
+            <p className="text-xl mb-10 text-blue-100 leading-relaxed max-w-3xl mx-auto">
+              Your generous donation helps us continue serving international students, 
+              creating community, and sharing God's love across cultures. Every gift, 
+              no matter the size, makes a meaningful difference.
+            </p>
+
+            <Link
+              href="/payments"
+              className="bg-white text-blue-600 px-10 py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 font-bold text-lg inline-flex items-center shadow-2xl transform hover:scale-105"
+            >
+              <Heart className="mr-3 w-6 h-6" />
+              Make a Donation
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+
+            <div className="mt-8 text-blue-100 text-sm">
+              <p>All donations are tax-deductible • Secure payment processing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
